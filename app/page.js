@@ -127,7 +127,7 @@ export default function App() {
       case '/': computation = prev / curr; break
     }
 
-    return computation
+    return computation.toString()
   }
 
   const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(
